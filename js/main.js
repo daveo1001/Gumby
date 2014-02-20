@@ -12,10 +12,6 @@ Gumby.ready(function() {
 	$('#skip-switch').on('gumby.onComplete', function() {
 		$(this).trigger('gumby.trigger');
 	});
-	
-	$('tryToTouchME').click(function(e)) {
-		alert('hey, you did it!')
-	}
 
 // Oldie document loaded
 }).oldie(function() {
@@ -26,3 +22,6 @@ Gumby.ready(function() {
 	Gumby.log("This is a touch enabled device...");
 });
 
+$('#tryToTouchMe').click(function(e) {
+	alert('hey, you did it!');
+});
